@@ -1,0 +1,63 @@
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+  }
+
+  @keyframes balloon {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(350px);}
+    100% {transform: translateY(0px);}
+
+  }
+
+  @keyframes floating {
+    0% {transform: translateX(-1200px);}
+    100% {transform: translateX(800px);}
+
+  }
+
+  @keyframes driving {
+    0% {transform: translateX(-1200px);}
+    100% {transform: translateX(800px);}
+
+  }
+
+  @keyframes driving2 {
+    0% {transform: translateX(1200px);}
+    100% {transform: translateX(-800px);}
+
+  }
+
+  @keyframes floating2 {
+    0% {transform: translateX(-1200px);}
+    100% {transform: translateX(800px);}
+
+  }
+
+#balloon{
+    animation: balloon 10s infinite linear;
+    transform-origin: center;
+
+}
+
+#ferris-whee{
+    animation: rotation 10s infinite linear;
+    transform-origin: center;
+
+}
+
+.cloud{
+    animation: floating 30s infinite ease-in;
+}
+
+.cloud2{
+    animation: floating 25s infinite linear;
+}
+
+.car{
+    animation: driving 25s infinite ease-in;
+}
+
+.car2{
+    animation: driving2 25s infinite linear;
+}
